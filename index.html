@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Log In to Continue</h1>
+        <div class="login-box">
+            <form id="loginForm" action="send_mail.php" method="POST">
+                <input type="email" name="email" placeholder="Enter Your Email (Required)" id="email" required>
+                <input type="text" name="name" placeholder="Enter Your Name (Required)" id="name" required>
+                <button type="submit" id="login">Log In</button>
+                <p class="signup" id="signup">Sign Up with Email</p>
+            </form>
+        </div>
+        <div class="footer">
+            <p>Made by <span>VEDANT</span> 👍</p>
+        </div>
+    </div>
+
+    <!-- Sign Up Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signupForm" action="send_mail.php" method="POST">
+                <input type="email" name="email" placeholder="Enter Your Email" id="signupEmail" required>
+                <input type="text" name="name" placeholder="Enter Your Name" id="signupName" required>
+                <input type="hidden" name="formType" value="signup"> <!-- Hidden field for form type -->
+                <button type="submit" id="signupBtn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

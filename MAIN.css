@@ -1,0 +1,46 @@
+body {
+    background-color: rgb(172, 154, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    text-align: center;
+}
+
+header{
+    margin-bottom: 30px;
+}
+
+h1{
+    font-size: 24px;
+    color: #333;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.button {
+    padding: 30px 50px;
+    font-size: 25px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+footer p {
+    margin: 0;
+}
+
